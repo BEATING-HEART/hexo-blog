@@ -1,0 +1,655 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>鑄日</title>
+        <subtitle>浩蕩長夜 至此而終</subtitle>
+        <icon>http://blog.sunforge.cn/images/favicon.ico</icon>
+        <link>http://blog.sunforge.cn</link>
+        <author>
+          <name>Sunforge</name>
+        </author>
+        <description>计科人笔记</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 01 Jul 2022 02:26:23 +0000</pubDate>
+        <lastBuildDate>Fri, 01 Jul 2022 02:26:23 +0000</lastBuildDate>
+        <category term="笔记" />
+        <category term="书架" />
+        <category term="教程" />
+        <item>
+            <guid isPermalink="true">http://blog.sunforge.cn/computer-science/hexo/%E6%9B%B4%E6%96%B0Hexo%E4%B8%BB%E9%A2%98%E4%B8%BAShoka/</guid>
+            <title>更新Hexo主题为Shoka</title>
+            <link>http://blog.sunforge.cn/computer-science/hexo/%E6%9B%B4%E6%96%B0Hexo%E4%B8%BB%E9%A2%98%E4%B8%BAShoka/</link>
+            <category term="计算机科学" scheme="http://blog.sunforge.cn/categories/computer-science/" />
+            <category term="Hexo博客" scheme="http://blog.sunforge.cn/categories/computer-science/hexo/" />
+            <category term="教程" scheme="http://blog.sunforge.cn/tags/%E6%95%99%E7%A8%8B/" />
+            <category term="Hexo" scheme="http://blog.sunforge.cn/tags/Hexo/" />
+            <pubDate>Fri, 01 Jul 2022 02:26:23 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;背景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景&#34;&gt;#&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;原本使用的 &lt;code&gt;pure&lt;/code&gt;  主题非常简约优秀，已经基本完成配置。&lt;/p&gt;
+&lt;p&gt;寻到一个更戳我的高颜值主题 &lt;code&gt;shoka&lt;/code&gt; ，所以更换主题。&lt;/p&gt;
+&lt;h1 id=&#34;主题变换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主题变换&#34;&gt;#&lt;/a&gt; 主题变换&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;将 &lt;code&gt;shoka&lt;/code&gt;  主题 &lt;code&gt;fork&lt;/code&gt;  到自己的仓库，然后在本地 &lt;code&gt;hexo&lt;/code&gt;  根目录下运行命令：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; submodule &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; https://github.com/你的Github用户名/hexo-theme-shoka.git themes/shoka&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;修改站点配置文件 &lt;code&gt;&amp;lt;root&amp;gt;/_config.yml&lt;/code&gt; ，将主题改为 &lt;code&gt;shoka&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;theme&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; shoka&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;修改主题配置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考 &lt;code&gt;shoka&lt;/code&gt;  文档，进行主题配置。&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;Theme Shoka Documentation (lostyu.me)&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：如果 algolia 相关字段存在，却没有正确配置 &lt;code&gt;appid&lt;/code&gt;  和 &lt;code&gt;apikey&lt;/code&gt;  等参数，博客会产生页面异常。（具体表现为首页轮播图失效变黑，以及页面滚动失效。）&lt;/p&gt;
+&lt;p&gt;注意：如果使用 &lt;code&gt;&amp;lt;root&amp;gt;/themes/shoka/example/source&lt;/code&gt;  文件夹来替代 &lt;code&gt;&amp;lt;root&amp;gt;/source&lt;/code&gt;  文件夹，会出现顶部标题栏和搜索栏背景失效的情况&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;%E6%9B%B4%E6%96%B0Hexo%E4%B8%BB%E9%A2%98%E4%B8%BAShoka/222.png&#34; alt=&#34;222&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;此时需要打开  &lt;code&gt;&amp;lt;root&amp;gt;\source\_data&lt;/code&gt;  目录下的  &lt;code&gt;colors.styl&lt;/code&gt;  文件，找到第  &lt;code&gt;47&lt;/code&gt;  行，加入  &lt;code&gt;--nav-bg;&lt;/code&gt;  配置（在  &lt;code&gt;&amp;#125;&lt;/code&gt;  前）即能正常显示&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;%E6%9B%B4%E6%96%B0Hexo%E4%B8%BB%E9%A2%98%E4%B8%BAShoka/image-20220704154307268.png&#34; alt=&#34;image-20220704154307268&#34; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;配置 &lt;code&gt;valine&lt;/code&gt;  评论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;需要在 &lt;code&gt;leancloud&lt;/code&gt;  平台注册账号。国内建议选择华东区，国外建议选择国际版。然后参照文档申请 &lt;code&gt;appid&lt;/code&gt;  和 &lt;code&gt;appkey&lt;/code&gt;  并配置即可。&lt;/p&gt;
+&lt;h1 id=&#34;配置shoka主题必看的文档教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置shoka主题必看的文档教程&#34;&gt;#&lt;/a&gt; 配置 shoka 主题必看的文档教程&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;Hexo 主题 Shoka &amp;amp; multi-markdown-it 渲染器使用说明 - Theme Shoka Documentation - 二进制杂谈 - 计算机科学 | Yume Shoka = 優萌初華 = 有夢書架 (lostyu.me)&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLm1vZWh6LmNvbS9hcmNoaXZlcy9oZXhvLXNob2thLWJ1aWxkLmh0bWw=&#34;&gt;Hexo 博客搭建：基础配置主题:shoka] - hexo - blog | Moe Hz = 萌 Hz | 木白の时记 = 日々私たちが过ごしている日常は、実は、奇迹の连続なのかもしれない&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucmV2ZXJzZXNhY2xlLmNvbS9IZXhvLVNob2thJUU0JUI4JUJCJUU5JUEyJTk4JUU1JThBJTlGJUU4JTgzJUJEJUU0JUJCJThCJUU3JUJCJThEJUU4JUExJUE1JUU1JTg1JTg1JUU3JTgyJUI5Lw==&#34;&gt;Hexo-Shoka 主题功能介绍补充点 | ReverseSacle-Blog = 逆转天平 = 执着过去的人，无法迈向未来&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vdG1saC9wLzEwNDUyMjM1Lmh0bWw=&#34;&gt;Algolia 使用教程 ， 超详细傻子看都会 - 天的博客 (cnblogs.com)&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://blog.sunforge.cn/computer-science/hexo/%E4%BD%BF%E7%94%A8Github%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%EF%BC%8C%E5%B9%B6%E9%85%8D%E7%BD%AEGithub-Action%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E9%83%A8%E7%BD%B2/</guid>
+            <title>通过Github管理Hexo博客源码，并配置Github Action自动编译部署</title>
+            <link>http://blog.sunforge.cn/computer-science/hexo/%E4%BD%BF%E7%94%A8Github%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%EF%BC%8C%E5%B9%B6%E9%85%8D%E7%BD%AEGithub-Action%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E9%83%A8%E7%BD%B2/</link>
+            <category term="计算机科学" scheme="http://blog.sunforge.cn/categories/computer-science/" />
+            <category term="Hexo博客" scheme="http://blog.sunforge.cn/categories/computer-science/hexo/" />
+            <category term="教程" scheme="http://blog.sunforge.cn/tags/%E6%95%99%E7%A8%8B/" />
+            <category term="Hexo" scheme="http://blog.sunforge.cn/tags/Hexo/" />
+            <pubDate>Mon, 27 Jun 2022 07:33:01 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;背景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景&#34;&gt;#&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;前述的 Hexo 博客方案的运行模式是：&lt;strong&gt;本地写作、本地编译、远端部署&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;一旦本地的博客环境受到破坏，那么博客源文件就会丢失。&lt;/p&gt;
+&lt;p&gt;所以妥善管理源代码就是十分必要的。&lt;/p&gt;
+&lt;p&gt;但由于源代码中，引入了各种插件，存放着不少 &lt;code&gt;appid&lt;/code&gt;  和 &lt;code&gt;appkey&lt;/code&gt; 。这些信息不合适公开存放在 &lt;code&gt;github&lt;/code&gt;  的 &lt;code&gt;public&lt;/code&gt;  仓库里。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如今比较推荐的方案是&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用 &lt;code&gt;github&lt;/code&gt;  私有仓库存储博客源码&lt;/li&gt;
+&lt;li&gt;配置 &lt;code&gt;github action&lt;/code&gt;  监听博客源码仓库的 &lt;code&gt;push&lt;/code&gt;  事件&lt;/li&gt;
+&lt;li&gt;当 &lt;code&gt;push&lt;/code&gt;  事件触发时， &lt;code&gt;github action&lt;/code&gt;  自动对博客源码仓库进行编译&lt;/li&gt;
+&lt;li&gt;编译结果推送到正式博客公开仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;不论使用 &lt;code&gt;github page&lt;/code&gt;  部署博客，还是使用前述的 &lt;code&gt;vercel&lt;/code&gt;  部署博客，都建议这样配置自己的 &lt;code&gt;Hexo&lt;/code&gt;  博客。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当然，如果使用 &lt;code&gt;vercel&lt;/code&gt;  的话，可以将自己的私有仓库直接授权给 &lt;code&gt;vercel&lt;/code&gt; ，这样可以免去使用 &lt;code&gt;github action&lt;/code&gt;  的麻烦，在 &lt;code&gt;vercel&lt;/code&gt;  上选择 &lt;code&gt;Hexo&lt;/code&gt;  模板，剩下的就交给 &lt;code&gt;vercel&lt;/code&gt;  了。&lt;/p&gt;
+&lt;h1 id=&#34;设置github-action&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置github-action&#34;&gt;#&lt;/a&gt; 设置 Github Action&lt;/h1&gt;
+&lt;h2 id=&#34;代码仓库准备&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码仓库准备&#34;&gt;#&lt;/a&gt; 代码仓库准备&lt;/h2&gt;
+&lt;p&gt;首先新建私有的博客源代码仓库，命名随意。比如 &lt;code&gt;hexo-blog-src&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;博客发布的公开仓库要么是 &lt;code&gt;你的github用户名.github.io&lt;/code&gt; （假如使用 &lt;code&gt;github page&lt;/code&gt;  托管），要么是自定义的一个仓库（不论公开或私有，假如使用 &lt;code&gt;vercel&lt;/code&gt;  托管）&lt;/p&gt;
+&lt;p&gt;在本地，使用 &lt;code&gt;git&lt;/code&gt;  工具，连接 &lt;code&gt;hexo-blog-src&lt;/code&gt;  仓库（不必上传 &lt;code&gt;node_modules&lt;/code&gt;  文件夹）&lt;/p&gt;
+&lt;h2 id=&#34;使用git的submodule管理hexo主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用git的submodule管理hexo主题&#34;&gt;#&lt;/a&gt; 使用 git 的 submodule 管理 hexo 主题&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考文档：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xNDk3MTAxOTE=&#34;&gt;为 Hexo 博客更换主题 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;前文，在安装 &lt;code&gt;pure&lt;/code&gt;  主题时，使用的命令为&lt;/strong&gt;：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone https://github.com/cofess/hexo-theme-pure.git themes/pure&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;产生了一个问题&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;用  &lt;code&gt;git clone&lt;/code&gt;  是把一个独立的仓库克隆到我们的的  &lt;code&gt;Hexo&lt;/code&gt;  源码中，但同时，我们的  &lt;code&gt;Hexo&lt;/code&gt;  源码也是一个仓库，所以两个仓库产生了父子关系。即 Pure 主题仓库成为了我们 &lt;code&gt;Hexo&lt;/code&gt;  主仓库下的一个独立子仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;但在 &lt;code&gt;git&lt;/code&gt;  的设计上，父仓库不会对子仓库进行管理。这样就违背了我们用  &lt;code&gt;Git&lt;/code&gt;  进行 &lt;code&gt;Hexo&lt;/code&gt;  博客版本控制的初衷。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以删除  &lt;code&gt;pure&lt;/code&gt;  项目下的  &lt;code&gt;.git&lt;/code&gt;  文件，把  &lt;code&gt;themes/pure&lt;/code&gt;  变成一个普通的目录，这样就取消了父子仓库关系。但是如果后续主题作者有更新，就不能直接用  &lt;code&gt;git pull&lt;/code&gt;  拉取更新，而是需要手动安装，覆盖原来的文件，重新配置主题，&lt;strong&gt;不易维护&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当我们进行 &lt;code&gt;git add *&lt;/code&gt;  的时候， &lt;code&gt;Git&lt;/code&gt;  会报错&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;adding embedded git repository&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; themes/hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;theme&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;pure&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; You&#39;ve added another git repository inside your current repository.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Clones of the outer repository will not contain the contents of&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; the embedded repository and will not know how to obtain it.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; If you meant to add a submodule&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;use&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;   git submodule add &amp;lt;url&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt; themes/hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;theme&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;pure&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; If you added this path by mistake&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; you can remove it from the&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;index with&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;   git rm &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;cached themes/hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;theme&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;pure&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;hint&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; See &#34;git help submodule&#34; for more information.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;如果强行 &lt;code&gt;push&lt;/code&gt; ，在  &lt;code&gt;GitHub&lt;/code&gt;  上会显示子模块图标，但是不知道这个模块仓库所在的  &lt;code&gt;url&lt;/code&gt;  ，因此在  &lt;code&gt;GitHub&lt;/code&gt;  上无法打开这个文件夹。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;好在 Git 提供了子模块 submodule 功能，可以优雅地避免上面的问题。它允许我们将一个 Git 仓库作为另一个 Git 仓库的子目录，同时还保持提交的独立。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;但是，直接在终端输入如下的代码，仍然是不妥当的&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; submodule &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; https://github.com/cofess/hexo-theme-pure.git themes/pure&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;为什么呢？其实这样子，在我们本地修改和使用主题的时候是没有问题的&lt;/p&gt;
+&lt;p&gt;但是当我们要把修改提交到 GitHub 时，会导致我们把自己的文件，提交到&lt;strong&gt;主题原作者&lt;/strong&gt;的仓库去，这显然是不合适的（也提交不上去，没有权限）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;因此，下载主题的正确操作流程应该是这样的&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在 GitHub 上，&lt;strong&gt;把原作者的主题 fork 到我们自己的仓库中&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;运行以下命令，把 Pure 主题添加为我们博客的子模块&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; submodule &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; https://github.com/你的Github用户名/hexo-theme-pure.git themes/pure&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;成功添加子模块后，目录下会生成 &lt;code&gt;.gitmodules&lt;/code&gt;  文件，再次运行 &lt;code&gt;git add *&lt;/code&gt;  添加 &lt;code&gt;.gitmodule&lt;/code&gt;  文件和子模块文件夹。此时不会报错，随后依次运行 &lt;code&gt;git commit -m &amp;quot;your message&amp;quot;&lt;/code&gt;  和 &lt;code&gt;git push&lt;/code&gt;  命令提交更改。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;或使用 &lt;code&gt;Git&lt;/code&gt;  的图形界面客户端，比如 &lt;code&gt;Github Desktop&lt;/code&gt;  或 &lt;code&gt;SourceTree&lt;/code&gt;  等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;此时， &lt;code&gt;Github&lt;/code&gt;  界面上显示如图。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220629213624111.png&#34; alt=&#34;image-20220629213624111&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;可以看到， &lt;code&gt;pure&lt;/code&gt;  文件夹已经成为蓝色。然后显示了 &lt;code&gt;@17dcbb1&lt;/code&gt;  的字样。实际上 &lt;code&gt;@17dcbb1&lt;/code&gt;  是 &lt;code&gt;pure&lt;/code&gt;  仓库里最新提交记录的 &lt;code&gt;hash&lt;/code&gt;  值。&lt;/p&gt;
+&lt;p&gt;如果点击这个链接，会跳转到之前从 &lt;code&gt;cofess/hexo-theme-pure&lt;/code&gt;  仓库 &lt;code&gt;fork&lt;/code&gt;  过来的仓库 &lt;code&gt;BEATING-HEART/hexo-theme-pure&lt;/code&gt;  中。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以类比 C 语言中的指针来理解&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;配置github-token&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置github-token&#34;&gt;#&lt;/a&gt; 配置 &lt;code&gt;Github Token&lt;/code&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC83MDA4ODQ3Njk5OTE5MjQxMjI5&#34;&gt;通过 GitHub Actions 实现私有仓库的免费 Github Pages 部署 - 掘金 (juejin.cn)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;首先，配置个人 &lt;code&gt;github token&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有的教程也会使用 &lt;code&gt;ssh-keygen&lt;/code&gt;  命令生成密钥对。此处我们采用 &lt;code&gt;github token&lt;/code&gt;  的方式管理仓库的访问权限。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220630123829696.png&#34; alt=&#34;image-20220630123829696&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;进入 &lt;code&gt;developer settings&lt;/code&gt;  配置界面后，选择 &lt;code&gt;personal access token&lt;/code&gt;  选项卡，点击 &lt;code&gt;generate new tokens&lt;/code&gt;  按钮，添加新 &lt;code&gt;token&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220630123952949.png&#34; alt=&#34;image-20220630123952949&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后跳转到如图所示界面，按照下图配置即可。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220630124302015.png&#34; alt=&#34;image-20220630124302015&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其中， &lt;code&gt;token&lt;/code&gt;  命名随意，没有特殊要求。过期时间可以选择永不过期。由于还涉及到私有仓库，所以必须要把 &lt;code&gt;token&lt;/code&gt;  所有 &lt;code&gt;repo&lt;/code&gt;  相关的权限全部打开。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最后会生成这样的一个 &lt;code&gt;token&lt;/code&gt; ，需要妥善处理，做好复制（如图， &lt;code&gt;token&lt;/code&gt;  只会显示这一次）。为保密，不建议保存在本地或其他任何地方。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220630124756776.png&#34; alt=&#34;image-20220630124756776&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;将这个 &lt;code&gt;token&lt;/code&gt;  复制下来，部署到 &lt;code&gt;hexo-blog-src&lt;/code&gt;  仓库中去。&lt;/p&gt;
+&lt;p&gt;进入 &lt;code&gt;hexo-blog-src&lt;/code&gt;  仓库，在 &lt;code&gt;settings&lt;/code&gt;  中选择 &lt;code&gt;secret&lt;/code&gt;  选项卡，并添加 &lt;code&gt;repository secret&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220630130229881.png&#34; alt=&#34;image-20220630130229881&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;将刚才复制的内容，填写到弹出页面的 &lt;code&gt;Value&lt;/code&gt;  字段中，并命名（可任意命名）例如 &lt;code&gt;MY_REPO_TOKEN&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220630131954902.png&#34; alt=&#34;image-20220630131954902&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;编写github-action代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编写github-action代码&#34;&gt;#&lt;/a&gt; 编写 &lt;code&gt;Github Action&lt;/code&gt;  代码&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考文档：[用 GitHub Actions 自动部署 Hexo | 老苏的 blog (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xhb3N1Lm1s&#34;&gt;laosu.ml&lt;/span&gt;)](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sYW9zdS5tbC8yMDIyLzAxLzI0LyVFNyU5NCVBOEdpdEh1Yg==&#34;&gt;https://laosu.ml/2022/01/24 / 用 GitHub&lt;/span&gt; Actions 自动部署 Hexo)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在本地的 &lt;code&gt;git&lt;/code&gt;  仓库根目录，新建文件 &lt;code&gt;.github/workflows/hexo-blog-deployer.yml&lt;/code&gt;  文件。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文件名实际上是任意的。但文件格式必须是 &lt;code&gt;yml&lt;/code&gt;  格式。文件目录不可以改变，必须在 &lt;code&gt;.github/workflows&lt;/code&gt;  文件夹下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;push&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;env&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 根据自己情况修改&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;GIT_USER&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; BEATING&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;HEART&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;GIT_EMAIL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; beating_heart@yeah.net&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;GITHUB_REPO&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; BEATING&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;HEART/hexo&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;blog&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;GITHUB_REOP_BRANCH&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;jobs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;runs-on&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; ubuntu&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;latest&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; A job to deploy blog.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;steps&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Checkout&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; actions/checkout@v3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;with&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;token&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; $&amp;lt;&lt;span class=&#34;token tag&#34;&gt;!--swig&lt;/span&gt;￼0&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token scalar string&#34;&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            # 这个就是刚刚添加的secret（也就是前面生成的personal access token）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            # 此处 $ 的格式就是环境变量的格式，下同&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            # 如果不加token字段，会使用默认的token，但不能访问对应的submodule&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;submodules&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# Checkout private submodules(themes or something else).&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Setup&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;Node&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; actions/setup&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;node@v3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;with&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;node-version&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;16&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;cache&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;npm&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;cache-dependency-path&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;**/package-lock.json&#39;&lt;/span&gt;	&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# setup-node 的时候，会根据 package-lock.json 来安装依赖&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;# 所以 package-lock.json 这个文件一定要提交到 github 上去&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; npm ci	&lt;span class=&#34;token comment&#34;&gt;# npm ci 命令，多用于自动化平台。与 npm install 功能类似，也有部分区别。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Hexo clean &amp;amp; generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token scalar string&#34;&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ./node_modules/hexo/bin/hexo clean&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ./node_modules/hexo/bin/hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        echo -e &#34;\033[33m [success] hexo clean &amp;amp; generate finished \033[0m&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token comment&#34;&gt;# 实际上，刚开始的时候，直接运行的 hexo clean 结果报错没找到目录或文件。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token comment&#34;&gt;# 后来尝试了很多，比如使用 npm config get prefix 找到 npm 目录，然后寻找 hexo。但都失败了。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token comment&#34;&gt;# 最终使用 ls . 命令列出了当前文件夹下的文件目录，才在 node_modules 文件夹中找到 hexo&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token comment&#34;&gt;# 上面 echo 命令里面，控制了文字颜色为黄色。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token scalar string&#34;&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cd ./public&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git config user.name &#34;$&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git config user.email &#34;$@users.noreply.github.com&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git remote add origin &#34;https://$@github.com/$.git&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        	# 这里使用了github的token验证功能。是往博客正式仓库中推送内容。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git checkout --orphan $&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        	# orphan，意为孤儿，此命令会生成一个没有历史提交记录的分支。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git add --all&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        echo -e &#34;\033[33m Start Commit \033[0m&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git commit --allow-empty -m &#34;Site updated: $(TZ=UTC-8 date +%Y-%m-%d&#34; &#34;%H:%M:%S)&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        	# 按照shell中的时间控制串格式，设置时区为东八区，然后显示年月日时分秒。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        echo -e &#34;\033[33m Start Push \033[0m&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        git push origin &#34;$&#34; --force&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;63&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        echo -e &#34;\033[33m Deployment succesfully! \033[0m&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;当仓库发生 &lt;code&gt;push&lt;/code&gt;  事件时，该 &lt;code&gt;action&lt;/code&gt;  脚本将会自动执行。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$&amp;#123;&amp;#123; xxx &amp;#125;&amp;#125;&lt;/code&gt;  表示环境变量&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;env&lt;/code&gt;  字段中的值，需要根据自己情况修改&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;发布博客测试部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#发布博客测试部署&#34;&gt;#&lt;/a&gt; 发布博客，测试部署&lt;/h2&gt;
+&lt;p&gt;在本地编辑文档，然后上传到 &lt;code&gt;hexo-blog-src&lt;/code&gt;  仓库，触发 &lt;code&gt;github action&lt;/code&gt; ，自动向 &lt;code&gt;hexo-blog&lt;/code&gt;  仓库提交代码，随后网站页面自动更新。&lt;/p&gt;
+&lt;h1 id=&#34;参考文档&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文档&#34;&gt;#&lt;/a&gt; 参考文档&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVhbnlpZmVuZy5jb20vYmxvZy8yMDE5LzA5L2dldHRpbmctc3RhcnRlZC13aXRoLWdpdGh1Yi1hY3Rpb25zLmh0bWw=&#34;&gt;GitHub Actions 入门教程 - 阮一峰的网络日志 (ruanyifeng.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sYW9zdS5tbC8yMDIyLzAxLzI0LyVFNyU5NCVBOEdpdEh1YiUyMEFjdGlvbnMlRTglODclQUElRTUlOEElQTglRTklODMlQTglRTclQkQlQjJIZXhvLw==&#34;&gt;用 GitHub Actions 自动部署 Hexo | 老苏的 blog (laosu.ml)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80MDgzMTk4MzE=&#34;&gt;Github Actions: submodule 下公私有仓库授权和通信 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FjdGlvbnMvY2hlY2tvdXQ=&#34;&gt;actions/checkout: Action for checking out a repo (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FjdGlvbnMvY2FjaGU=&#34;&gt;actions/cache: Cache dependencies and build outputs in GitHub Actions&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FjdGlvbnMvc2V0dXAtbm9kZQ==&#34;&gt;actions/setup-node: Set up your GitHub Actions workflow with a specific version of node.js&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://blog.sunforge.cn/computer-science/hexo/%E4%BD%BF%E7%94%A8vercel%E6%89%98%E7%AE%A1Hexo%E5%8D%9A%E5%AE%A2%EF%BC%8C%E8%A7%A3%E5%86%B3github-io%E6%97%A0%E6%B3%95%E8%A2%ABbaidu%E6%94%B6%E5%BD%95%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+            <title>使用vercel托管Hexo博客，解决github.io无法被baidu收录的问题</title>
+            <link>http://blog.sunforge.cn/computer-science/hexo/%E4%BD%BF%E7%94%A8vercel%E6%89%98%E7%AE%A1Hexo%E5%8D%9A%E5%AE%A2%EF%BC%8C%E8%A7%A3%E5%86%B3github-io%E6%97%A0%E6%B3%95%E8%A2%ABbaidu%E6%94%B6%E5%BD%95%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+            <category term="计算机科学" scheme="http://blog.sunforge.cn/categories/computer-science/" />
+            <category term="Hexo博客" scheme="http://blog.sunforge.cn/categories/computer-science/hexo/" />
+            <category term="教程" scheme="http://blog.sunforge.cn/tags/%E6%95%99%E7%A8%8B/" />
+            <category term="Hexo" scheme="http://blog.sunforge.cn/tags/Hexo/" />
+            <pubDate>Mon, 27 Jun 2022 03:07:16 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;背景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景&#34;&gt;#&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;用了一段时间的博客，发现百度并没有收录我的文章。尽管我已经配置了 &lt;code&gt;hexo-baidu-url-submit&lt;/code&gt;  插件，也无效。&lt;/p&gt;
+&lt;p&gt;查询资料发现，Github 禁止了 baidu 爬虫访问 github.io 网页，配置 &lt;code&gt;hexo-baidu-url-submit&lt;/code&gt;  插件无法解决这个问题。&lt;/p&gt;
+&lt;p&gt;于是开始寻找替代方法。&lt;/p&gt;
+&lt;h1 id=&#34;探索&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#探索&#34;&gt;#&lt;/a&gt; 探索&lt;/h1&gt;
+&lt;p&gt;网上有很多方法可以使百度爬虫爬取博客页面，总结起来主要有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;CDN，利用云服务提供商将 blog 多做几个镜像。 &lt;strong&gt;CDN 比较贵&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;换托管平台，比如说国内的代码托管平台。
+&lt;ul&gt;
+&lt;li&gt;比如 &lt;code&gt;gitee&lt;/code&gt; 。&lt;strong&gt;但 &lt;code&gt;gitee&lt;/code&gt;  需要开源审核，不想用 &lt;code&gt;gitee page&lt;/code&gt;  了。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;有些教程会说到 &lt;code&gt;coding&lt;/code&gt;  平台，目前 &lt;code&gt;coding&lt;/code&gt;  平台并入腾讯云，如果使用静态网站托管服务，&lt;strong&gt;需要付费&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自行使用 VPS 托管。&lt;strong&gt;VPS 大陆访问速度不快&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;解决方案使用vercelzeit托管&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方案使用vercelzeit托管&#34;&gt;#&lt;/a&gt; 解决方案：使用 vercel（zeit）托管&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Guillermo Rauch&lt;/code&gt;  大神创业搞了一个静态站  &lt;code&gt;hosting&lt;/code&gt;  服务  &lt;code&gt;zeit.co&lt;/code&gt; ：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3plaXQuY28=&#34;&gt;http://zeit.co&lt;/span&gt; 现在已经重定向到了 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92ZXJjZWwuY29tLw==&#34;&gt;Develop. Preview. Ship. For the best frontend teams – Vercel&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;可以通过  &lt;code&gt;GitHub&lt;/code&gt;  实现自动部署， &lt;code&gt;vercel&lt;/code&gt;  提供 存储 +  &lt;code&gt;CDN&lt;/code&gt;  +  &lt;code&gt;DNS&lt;/code&gt;  一套完整的服务，截至目前（2022-06）在中国大陆可以正常访问。&lt;/p&gt;
+&lt;p&gt;** 换而言之，不用  &lt;code&gt;github page&lt;/code&gt;  了。** 而且 &lt;code&gt;vercel&lt;/code&gt;  免费，可以白嫖。&lt;/p&gt;
+&lt;p&gt;进入首页，点击右上方的 &lt;code&gt;sign up&lt;/code&gt;  按钮，进入登录界面&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627113154991.png&#34; alt=&#34;image-20220627113154991&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;通过 Github 账号授权登录。&lt;/p&gt;
+&lt;p&gt;选择 &lt;code&gt;Github&lt;/code&gt;  为 &lt;code&gt;Git&lt;/code&gt;  源&lt;/p&gt;
+&lt;p&gt;添加 Github 账户。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;vercel&lt;/code&gt;  会作为 &lt;code&gt;github app&lt;/code&gt;  被安装到 &lt;code&gt;Github&lt;/code&gt;  账户上。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627113959891.png&#34; alt=&#34;image-20220627113959891&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;设置 &lt;code&gt;vercel&lt;/code&gt;  对 &lt;code&gt;github&lt;/code&gt;  仓库的访问权限&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vercel&lt;/code&gt;  网页会自动跳出设置界面&lt;/li&gt;
+&lt;li&gt;也可以去 &lt;code&gt;github&lt;/code&gt;  官网上配置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在 &lt;code&gt;github&lt;/code&gt;  的账号 &lt;code&gt;setting&lt;/code&gt;  界面（ &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL2luc3RhbGxhdGlvbnM=&#34;&gt;https://github.com/settings/installations&lt;/span&gt; ），点击 &lt;code&gt;applications&lt;/code&gt; ，设置 ``vercel` 的权限&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627124659297.png&#34; alt=&#34;image-20220627124659297&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;往下拉，设置 &lt;code&gt;permissions&lt;/code&gt;  和 &lt;code&gt;repository access&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627124912542.png&#34; alt=&#34;image-20220627124912542&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;经过授权，可以访问包括私有仓库在内的所有 &lt;code&gt;github&lt;/code&gt;  仓库。此处我仅选择开放了部分仓库。&lt;/p&gt;
+&lt;p&gt;在控制面板中，点击 &lt;code&gt;New Project&lt;/code&gt;  按钮，新建项目&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627125722412.png&#34; alt=&#34;image-20220627125722412&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择新建项目，导入对应博客的仓库后，不做任何调整（保持 other 模板，root 设置为 &lt;code&gt;./&lt;/code&gt;  即可），直接点击部署按钮，也就是 &lt;code&gt;deploy&lt;/code&gt;  按钮。项目即完成部署。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：使用 &lt;code&gt;vercel&lt;/code&gt;  部署，可以完全替代 &lt;code&gt;github page&lt;/code&gt;  的功能&lt;/p&gt;
+&lt;p&gt;换言之，可以不使用 &lt;code&gt;你的github用户名.github.io&lt;/code&gt;  这个特殊仓库&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627125416332.png&#34; alt=&#34;image-20220627125416332&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;项目完成部署后，按照下述步骤，可以配置自己的域名。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627130914433.png&#34; alt=&#34;image-20220627130914433&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;按照报错信息教程，做好域名配置即可&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627131152082.png&#34; alt=&#34;image-20220627131152082&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;我的域名在阿里云，所以在阿里云的 DNS 解析上添加一条 &lt;code&gt;CNAME&lt;/code&gt;  记录，即可使用自己的域名，正常显示博客。而且 &lt;code&gt;vercel&lt;/code&gt;  也会自动签发 &lt;code&gt;HTTPS&lt;/code&gt;  证书。&lt;/p&gt;
+&lt;p&gt;随后再向百度站长工具提交链接，就能保证内容被抓取。&lt;/p&gt;
+&lt;h1 id=&#34;参考文献&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献&#34;&gt;#&lt;/a&gt; 参考文献&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zMzMzMzM0NQ==&#34;&gt;解决 github 屏蔽百度爬虫的问题 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xMTM0MzMyMzA=&#34;&gt;使用 zeit.co 托管 hexo 静态博客 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueWlzdS5jb20veml4dW4vNTg3OTYzLmh0bWw=&#34;&gt;如何让百度收录 GitHub Pages 个人博客 - 大数据 - 亿速云 (yisu.com)&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://blog.sunforge.cn/computer-science/hexo/%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BD%BF%E7%94%A8Pure%E4%B8%BB%E9%A2%98%EF%BC%89%E5%B9%B6%E6%89%98%E7%AE%A1%E5%88%B0Github-Page/</guid>
+            <title>用Hexo搭建个人博客（使用Pure主题）并托管到Github Page</title>
+            <link>http://blog.sunforge.cn/computer-science/hexo/%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BD%BF%E7%94%A8Pure%E4%B8%BB%E9%A2%98%EF%BC%89%E5%B9%B6%E6%89%98%E7%AE%A1%E5%88%B0Github-Page/</link>
+            <category term="计算机科学" scheme="http://blog.sunforge.cn/categories/computer-science/" />
+            <category term="Hexo博客" scheme="http://blog.sunforge.cn/categories/computer-science/hexo/" />
+            <category term="教程" scheme="http://blog.sunforge.cn/tags/%E6%95%99%E7%A8%8B/" />
+            <category term="Hexo" scheme="http://blog.sunforge.cn/tags/Hexo/" />
+            <pubDate>Fri, 24 Jun 2022 11:27:29 +0000</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;本文讨论的是在 Windows 环境下，安装使用 Hexo 博客。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;什么是hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是hexo&#34;&gt;#&lt;/a&gt; 什么是 Hexo&lt;/h1&gt;
+&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RhcmluZ2ZpcmViYWxsLm5ldC9wcm9qZWN0cy9tYXJrZG93bi8=&#34;&gt;Markdown&lt;/span&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+&lt;h1 id=&#34;hexo框架安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo框架安装&#34;&gt;#&lt;/a&gt; Hexo 框架安装&lt;/h1&gt;
+&lt;h2 id=&#34;安装准备&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装准备&#34;&gt;#&lt;/a&gt; 安装准备&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;安装 Node.js 环境（最低要求 10.13，推荐 12.0 以上）&lt;strong&gt;安装教程&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC83NzU5NDI1MQ==&#34;&gt;Node.js 安装与配置详解 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;安装 Git &lt;strong&gt;安装教程&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L211a2VzL2FydGljbGUvZGV0YWlscy8xMTU2OTM4MzM=&#34;&gt; Git 详细安装教程（详解 Git 安装过程的每一个步骤）_mukes 的博客 - CSDN 博客_git 安装&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装hexo-cli&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装hexo-cli&#34;&gt;#&lt;/a&gt; 安装 Hexo-cli&lt;/h2&gt;
+&lt;p&gt;通过 npm 工具，安装 Hexo&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; -g hexo-cli&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;高级安装（略）可参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;Documentation | Hexo&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;hexo初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo初始化&#34;&gt;#&lt;/a&gt; Hexo 初始化&lt;/h2&gt;
+&lt;p&gt;选定一个文件夹，运行下面的命令，对本地的 hexo 进行初始化&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo init &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;folder&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;folder&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;初始化后，该文件夹下的目录结构如图：&lt;/p&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;span&gt;w&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── _config.yml&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── package.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── scaffolds&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├── source&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;|   ├── _drafts&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;|   └── _posts&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;└── themes&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;本地测试启动hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地测试启动hexo&#34;&gt;#&lt;/a&gt; 本地测试启动 Hexo&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean &lt;span class=&#34;token comment&#34;&gt;# 清除缓存&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g &lt;span class=&#34;token comment&#34;&gt;# 生成静态文件 也作 hexo generate&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo s &lt;span class=&#34;token comment&#34;&gt;# 本地启动 Hexo 也作 hexo server&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;默认主题是 &lt;code&gt;landscape&lt;/code&gt; ，效果如图&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;拿了别人博客的图，打个码，总之效果就是这样。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220625123409880.png&#34; alt=&#34;image-20220625123409880&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;运行上述命令后，访问 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xvY2FsaG9zdDo0MDAw&#34;&gt;http://localhost:4000&lt;/span&gt; 查看效果。&lt;/p&gt;
+&lt;p&gt;如果不喜欢 4000 这个端口，可以使用命令 &lt;code&gt;hexo server -p 1314&lt;/code&gt;  来改变端口为 &lt;code&gt;1314&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;至此，安装 Hexo 完成。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;hexo配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo配置&#34;&gt;#&lt;/a&gt; Hexo 配置&lt;/h1&gt;
+&lt;p&gt;若运行以下命令，可以新建文章。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo new &lt;span class=&#34;token string&#34;&gt;&#34;your title&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;打开 &lt;code&gt;博客根目录/source/_posts&lt;/code&gt;  目录，可以看见命令生成的 &lt;code&gt;your-title.md&lt;/code&gt;  文件&lt;/p&gt;
+&lt;p&gt;随后就可以编写博客。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;但，工欲善其事，必先利其器&lt;/strong&gt;。正式写博客之前，需要对框架做一些配置，使其支持图片插入，Latex 公式显示以及标题自动翻译。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;图片显示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片显示&#34;&gt;#&lt;/a&gt; 图片显示&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考文档：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xMzI4MjM4MjY=&#34;&gt;使用 hexo 新建、编辑并预览文章 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hexo 插入图片，需要指定&lt;strong&gt;资源文件夹&lt;/strong&gt;，步骤如下&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在博客根目录打开 &lt;code&gt;_config.yml&lt;/code&gt;  文件做如下修改：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;post_asset_folder&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 hexo 新建文章，此时会创建&lt;strong&gt;同名文件夹&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;typora&lt;/code&gt;  编辑器，编写文档。调整 &lt;code&gt;Typora&lt;/code&gt;  编辑器的默认图片路径。然后插入图片，就会自动添加到&lt;strong&gt;上述的同名文件夹&lt;/strong&gt;中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220624231810397.png&#34; alt=&#34;image-20220624231810397&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安装插件 &lt;code&gt;hexo-asset-image&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-asset-image --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行命令，部署博客，查看效果。发现&lt;strong&gt;图片已经能够正常显示&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;latex数学公式显示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#latex数学公式显示&#34;&gt;#&lt;/a&gt; Latex 数学公式显示&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2NvZmVzcy9oZXhvLXRoZW1lLXB1cmUvYmxvYi9tYXN0ZXIvUkVBRE1FLmNuLm1kIyVFNiU5NSVCMCVFNSVBRCVBNiVFNSU4NSVBQyVFNSVCQyU4Rg==&#34;&gt;hexo-theme-pure #数学公式 (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;变换默认 Hexo 的 Markdown 渲染引擎&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; un hexo-renderer-marked --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; i hexo-renderer-markdown-it-plus --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改 Hexo 项目根目录下的配置文件 &lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;markdown_it_plus&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;highlight&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;xhtmlOut&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;breaks&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;langPrefix&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;linkify&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;typographer&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;quotes&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; “”‘’&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;plugins&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;plugin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; markdown&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;it&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;katex&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;plugin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; markdown&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;it&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;mark&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后依次运行 &lt;code&gt;hexo clean&lt;/code&gt;  和 &lt;code&gt;hexo g -d&lt;/code&gt;  命令，如果报错说，不存在依赖 &lt;code&gt;markdown-it-katex&lt;/code&gt;  则还需另外安装&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; i markdown-it-katex --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;code&gt;Hexo&lt;/code&gt;  模板中启用 &lt;code&gt;mathjax&lt;/code&gt;  渲染&lt;/p&gt;
+&lt;p&gt;从 Hexo 项目根目录，进入 &lt;code&gt;scaffolds&lt;/code&gt;  文件夹，修改 &lt;code&gt;post.md&lt;/code&gt;  模板，修改以下内容&lt;/p&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: 用Hexo搭建个人博客（使用Pure主题）并托管到Github Page&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: 1656070049000&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mathjax: true # 此处是添加部分&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tags:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在博客中，添加 Latex 公式，编译部署。&lt;strong&gt;Latex 公式能够正常显示。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;安装配置hexo-neat插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装配置hexo-neat插件&#34;&gt;#&lt;/a&gt; 安装配置 &lt;code&gt;hexo-neat&lt;/code&gt;  插件&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2NvZmVzcy9oZXhvLXRoZW1lLXB1cmUvYmxvYi9tYXN0ZXIvUkVBRE1FLmNuLm1kI2hleG8tbmVhdA==&#34;&gt;hexo-theme-pure #hexo-neat (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;自动压缩 html，css，js 等代码，减小生成文件的体积。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-neat --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后在 Hexo 配置文件 &lt;code&gt;./_config.yml&lt;/code&gt;  中添加以下代码&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# hexo-neat&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;neat_enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;neat_html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;exclude&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;neat_css&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;exclude&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;*.min.css&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;neat_js&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;mangle&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;output&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;compress&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;exclude&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;*.min.js&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;404错误的排除设置标题自动翻译&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#404错误的排除设置标题自动翻译&#34;&gt;#&lt;/a&gt; 404 错误的排除：设置标题自动翻译&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hexo 文件标题如果含有中文字符，可能会产生 404 错误。特别是如果要部署到 Github 等平台，必须要配置这个标题自动翻译。&lt;/p&gt;
+&lt;p&gt;推荐使用 &lt;code&gt;hexo-translate-title&lt;/code&gt;  插件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参考文档：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC80MTA5YzdlZmY1MjY=&#34;&gt;Hexo，添加标题翻译插件 - 简书 (jianshu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2NvbWV0bGovaGV4by10cmFuc2xhdGUtdGl0bGU=&#34;&gt;cometlj/hexo-translate-title: 使用 Google 翻译，百度翻译和有道翻译将 Hexo 文章中的汉字标题转成英文标题 (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;npm&lt;/code&gt;  工具，安装 &lt;code&gt;hexo-translate-title&lt;/code&gt;  插件&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-translate-title --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置 Hexo 博客。在博客项目根目录下的配置文件 &lt;code&gt;_config.yml&lt;/code&gt;  中，添加下述字段。&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;span&gt;l&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;translate_title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;translate_way&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; baidu_with_appid  &lt;span class=&#34;token comment&#34;&gt;# google,youdao,baidu_with_appid,baidu_no_appid&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# youdao_api_key: &#39;&#39; # Your youdao_api_key&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# youdao_keyfrom: xxxx-blog # Your youdao_keyfrom&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;is_need_proxy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;     &lt;span class=&#34;token comment&#34;&gt;# true | false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# proxy_url: http://localhost:50018 # Your proxy_url&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;baidu_appid&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# Your baidu_appid&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;baidu_appkey&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# Your baidu_appkey&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;rewrite&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# is rewrite true | false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;由于 google 翻译可能受到影响。因此，若使用 google 翻译，可能需要使用本地代理。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;baidu_no_appid&lt;/code&gt;  不起作用了，会有报错。&lt;/p&gt;
+&lt;p&gt;所以只能选择 &lt;code&gt;youdao&lt;/code&gt;  或 &lt;code&gt;baidu_with_appid&lt;/code&gt; 。对应的 &lt;code&gt;appid&lt;/code&gt;  和 &lt;code&gt;key&lt;/code&gt;  需要到对应官网去申请&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9haS55b3VkYW8uY29tL3Byb2R1Y3QtZmFueWktdGV4dC5z&#34;&gt;文本翻译_机器翻译_在线翻译 - 有道智云 AI 开放平台 (youdao.com)&lt;/span&gt; ， &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2FwaS5mYW55aS5iYWlkdS5jb20v&#34;&gt;百度翻译开放平台 (baidu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置好翻译接口后，运行 &lt;code&gt;hexo clean&lt;/code&gt;  命令，再运行 &lt;code&gt;hexo g&lt;/code&gt;  命令。翻译生效。此时，可以运行 &lt;code&gt;hexo s&lt;/code&gt;  命令，本地启动博客。博客链接已经替换成了翻译生成的英文标题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Hexo 博客的基础配置已经全部完成。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;博客发文&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#博客发文&#34;&gt;#&lt;/a&gt; 博客发文&lt;/h1&gt;
+&lt;p&gt;前面说到，运行 &lt;code&gt;hexo new &amp;quot;your title&amp;quot;&lt;/code&gt;  命令，可以新建博客文章。&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;博客根目录/source/_posts&lt;/code&gt;  目录，编辑生成的 &lt;code&gt;your-title.md&lt;/code&gt;  文件，保存后，依次运行 &lt;code&gt;hexo clean&lt;/code&gt; ， &lt;code&gt;hexo g&lt;/code&gt;  和 &lt;code&gt;hexo s&lt;/code&gt; ，即可在本地启动博客。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为更方便发文，首先修改模板&lt;/strong&gt;：从 Hexo 项目根目录，进入 &lt;code&gt;scaffolds&lt;/code&gt;  文件夹，修改 &lt;code&gt;post.md&lt;/code&gt;  模板为：&lt;/p&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: 用Hexo搭建个人博客（使用Pure主题）并托管到Github Page&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: 1656070049000&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mathjax: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;categories:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tags:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;** 随后开始新建文章：** 我使用 &lt;code&gt;hexo new &amp;quot;testblog&amp;quot;&lt;/code&gt;  命令，新建了博客 &lt;code&gt;testblog&lt;/code&gt; ，此时，文件夹 &lt;code&gt;博客根目录/source/_posts&lt;/code&gt;  中自动生成了以下两个文件&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220626134348330.png&#34; alt=&#34;image-20220626134348330&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;打开 &lt;code&gt;testblog.md&lt;/code&gt;  文件后，框架为我们自动生成了以下内容。&lt;/p&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: testblog&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mathjax: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;translate_title: testblog&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: 2022-06-26 13:39:42&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;categories:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tags:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;其中 &lt;code&gt;translate_title&lt;/code&gt;  是上述 &lt;code&gt;hexo-translate-title&lt;/code&gt;  插件生成的。&lt;/p&gt;
+&lt;p&gt;其余字段是 &lt;code&gt;post.md&lt;/code&gt;  模板生成的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;编辑好博客内容后。我们还可以对文章增加标签和目录。以本文为例。&lt;/p&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: 用 Hexo 搭建个人博客（使用 Pure 主题）并托管到 Github Page&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mathjax: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;translate_title: set-up-a-personal-blog-with-hexo-(using-the-pure-theme)-and-host-it-to-github-page&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: 2022-06-24 19:27:29&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;categories:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - Hexo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tags:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - 教程&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;本文就会自动出现分类和标签，并展示。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627095017829.png&#34; alt=&#34;image-20220627095017829&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;部署hexo到github-page托管&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署hexo到github-page托管&#34;&gt;#&lt;/a&gt; 部署 Hexo 到 Github Page 托管&lt;/h1&gt;
+&lt;h2 id=&#34;github访问加速&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github访问加速&#34;&gt;#&lt;/a&gt; Github 访问加速&lt;/h2&gt;
+&lt;p&gt;如果不会魔法上网操作，可以使用 Github 大神 dotnetcore 开发的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2RvdG5ldGNvcmUvRmFzdEdpdGh1Yg==&#34;&gt; FastGithub&lt;/span&gt; 客户端。&lt;/p&gt;
+&lt;h2 id=&#34;在github上构建仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在github上构建仓库&#34;&gt;#&lt;/a&gt; 在 Github 上构建仓库&lt;/h2&gt;
+&lt;p&gt;新建一个仓库，命名为： &lt;code&gt;你的Github用户名.github.io&lt;/code&gt;  【&lt;strong&gt;必须这么命名&lt;/strong&gt;，这个仓库会被识别为特殊仓库】&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Github用户名&lt;/code&gt; 大小写最好区分【一些教程中统一用的小写，我没试过】&lt;/p&gt;
+&lt;p&gt;我的用户名是 &lt;code&gt;BEATING-HEART&lt;/code&gt; ，所以，我的仓库命名为 &lt;code&gt;BEATING-HEART.github.io&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;配置github-ssh登录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置github-ssh登录&#34;&gt;#&lt;/a&gt; 配置 Github SSH 登录&lt;/h2&gt;
+&lt;p&gt;见本站另一博客。&lt;a href=&#34;https://blog.sunforge.cn/2022/06/26/%5Bexplanation%5D-configure-the-ssh-key-of-github-(windows).html&#34;&gt;【详解】配置 github 的 ssh key (Windows) | Sunforge&#39;s Blog&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;调整hexo配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调整hexo配置&#34;&gt;#&lt;/a&gt; 调整 Hexo 配置&lt;/h2&gt;
+&lt;p&gt;打开 Hexo 项目文件夹目录下的 &lt;code&gt;_config.yml&lt;/code&gt;  文件，拉到最底部，修改 deploy 字段为：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Deployment&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## Docs: https://hexo.io/docs/one-command-deployment&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git@github.com&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;你的Github用户名/你的Github用户名.github.io.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;本人的用户名是 &lt;code&gt;BEATING-HEART&lt;/code&gt; ，&lt;/p&gt;
+&lt;p&gt;所以，本人在上述的 repo 字段中填写的是 &lt;code&gt;git@github.com:BEATING-HEART/BEATING-HEART.github.io.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;注意，这里必须配置 SSH key 后，使用 Git 地址，否则可能需要登录验证。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;部署hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署hexo&#34;&gt;#&lt;/a&gt; 部署 Hexo&lt;/h2&gt;
+&lt;p&gt;在 Hexo 目录中，执行以下命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git --save  &lt;span class=&#34;token comment&#34;&gt;#安装部署工具&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean &lt;span class=&#34;token comment&#34;&gt;# 清除缓存&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g &lt;span class=&#34;token comment&#34;&gt;# 生成静态文件 也作 hexo generate&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo d &lt;span class=&#34;token comment&#34;&gt;# 部署 Hexo 到 Github 也作 hexo deploy&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;运行结束后，在浏览器中输入  &lt;code&gt;http://你的Github用户名.github.io&lt;/code&gt;  就可以访问博客。&lt;/p&gt;
+&lt;p&gt;比如访问 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iZWF0aW5nLWhlYXJ0LmdpdGh1Yi5pby8=&#34;&gt;https://beating-heart.github.io/&lt;/span&gt; 就可以到我的博客。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;但由于我配置了域名，这个连接会被重定向到 &lt;a href=&#34;https://blog.sunforge.cn/&#34;&gt;https://blog.sunforge.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;绑定域名非必选&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绑定域名非必选&#34;&gt;#&lt;/a&gt; 绑定域名（非必选）&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;购买域名后，打开域名控制台，添加解析记录&lt;/strong&gt;【这里以阿里云域名为例】&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;选择记录类型为 &lt;code&gt;CNAME&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;添加主机记录（域名二级地址）这里我分配了 &lt;code&gt;blog&lt;/code&gt;  这个地址。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这样一来，访问我的博客就是用 &lt;code&gt;blog.sunforge.cn&lt;/code&gt;  这个域名&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;记录值就是上面设置的，你的 github 的域名（我的域名是 &lt;code&gt;beating-heart.github.io&lt;/code&gt; ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TTL 值和解析路线值，保持默认即可&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220623105521387.png&#34; alt=&#34;image-20220623105521387&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在 Github 网站上，配置博客域名&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先进入博客配置的仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入设置界面，转到 pages 选项卡&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;添加自定义域名为你自己的域名&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;和上一步添加的解析记录保持一致，例如我的域名是 &lt;code&gt;blog.sunforge.cn&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;勾选 HTTPS 选项，Github 可以自动给你的域名配置 SSH 证书 &lt;s&gt;白嫖使人快乐&lt;/s&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220623110848673.png&#34; alt=&#34;image-20220623110848673&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;访问博客，查看效果。&lt;/strong&gt; （此时的主题是默认的 landscape 主题）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你没有域名，那么必须遵从上面的步骤配置，采用规定的仓库命名方式。 &lt;code&gt;github&lt;/code&gt;  会为你统一分配域名为  &lt;code&gt;https://你的github用户名.github.io/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果你有域名，则可以不遵守上面的配置，意命名你的 &lt;code&gt;github&lt;/code&gt;  仓库。只需要在上述页面中，绑定自己的域名，即可将页面部署到自己的域名下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;设置hexo主题非必须&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设置hexo主题非必须&#34;&gt;#&lt;/a&gt; 设置 Hexo 主题（非必须）&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hexo 默认主题可以满足大多使用需要，可以不更换主题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;hexo主题的挑选&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo主题的挑选&#34;&gt;#&lt;/a&gt; Hexo 主题的挑选&lt;/h2&gt;
+&lt;p&gt;可访问 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy9pbmRleC5odG1s&#34;&gt;Themes | Hexo&lt;/span&gt; 挑选心仪主题，也可查看 CSDN、博客园平台发布的经验贴。&lt;/p&gt;
+&lt;h2 id=&#34;配置pure主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置pure主题&#34;&gt;#&lt;/a&gt; 配置 Pure 主题&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pure 主题参考效果：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNvZmVzcy5jb20v&#34;&gt;Cofess - Web Developer &amp;amp; Designer&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2NvZmVzcy9oZXhvLXRoZW1lLXB1cmUvYmxvYi9tYXN0ZXIvUkVBRE1FLmNuLm1k&#34;&gt;cofess/hexo-theme-pure 中文说明文档 (github.com)&lt;/span&gt;     &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLnBsY2VudC5jb20vMjAxOS8xMS8wNS9oZXhvLXRoZW1lLXB1cmUvaW5kZXguaHRtbA==&#34;&gt;Hexo 主题 pure 使用指南 | 非典型性程序员 (plcent.com)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1. 启用 pure 主题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;修改 Hexo 项目根目录下的配置文件 &lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;language&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; zh&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;CN &lt;span class=&#34;token comment&#34;&gt;# 设置主题为中文版，若使用英文版则不修改&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;theme&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; pure &lt;span class=&#34;token comment&#34;&gt;# 修改 hexo 主题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;随后复制  &lt;code&gt;博客根目录/themes/pure/_source/&lt;/code&gt;  目录下的所有内容到  &lt;code&gt;博客根目录/source/&lt;/code&gt;  目录下，使用默认的菜单  &lt;code&gt;categories&lt;/code&gt;  (分类)、 &lt;code&gt;tags&lt;/code&gt;  (标签)、 &lt;code&gt;repository&lt;/code&gt;  (项目)、 &lt;code&gt;books&lt;/code&gt;  (书单)、 &lt;code&gt;links&lt;/code&gt;  (友链)、 &lt;code&gt;about&lt;/code&gt;  (关于) 页面。&lt;/p&gt;
+&lt;p&gt;并且将主题配置文件 &lt;code&gt;博客根目录/themes/pure/_config.yml&lt;/code&gt; ，移动到并重命名为 &lt;code&gt;博客根目录/_config.pure.yml&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每个主题，都有一个主题配置文件，存放在 &lt;code&gt;博客根目录/themes/pure/_config.yml&lt;/code&gt;  中。Hexo 默认会读取这个文件的内容。&lt;/p&gt;
+&lt;p&gt;为了方便修改，我们将博客配置文件移动到并重命名为 &lt;code&gt;博客根目录/_config.主题名.yml&lt;/code&gt; 。此时 Hexo 会读取根目录下的这个新配置文件的内容。&lt;/p&gt;
+&lt;p&gt;根据官方文档 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3MvY29uZmlndXJhdGlvbi5odG1s&#34;&gt;配置 | Hexo&lt;/span&gt;，如果有两个配置文件，&lt;strong&gt;配置内容会 “互通有无”&lt;/strong&gt;，所以，应当集中在同一个配置文件中修改。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;效果如图：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627110040296.png&#34; alt=&#34;image-20220627110040296&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 开启字数及阅读时间统计&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主题内置了该功能，使用前需要先安装插件:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; i -S hexo-wordcount&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;npm 命令中 &lt;code&gt;install&lt;/code&gt;  可以缩写为 &lt;code&gt;i&lt;/code&gt; ， &lt;code&gt;--save&lt;/code&gt;  可以缩写成为 &lt;code&gt;-S&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在主题配置文件中（根目录下的主题配置文件 &lt;code&gt;_config.pure.yml&lt;/code&gt; ）, 开启设置即可:&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# wordcount&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;postCount&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;## 从 false 修改成 true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;wordcount&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 文章字数统计&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;min2read&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 阅读时长预计&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;3. 开启站内搜索功能&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主题中已经内置。首先需要安装  &lt;code&gt;hexo-generator-json-content&lt;/code&gt;  插件。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-generator-json-content --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后在主题配置文件 &lt;code&gt;博客根目录/_config.pure.yml&lt;/code&gt;  中修改添加如下属性。&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;search&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;insight&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# you need to install `hexo-generator-json-content` before using Insight Search&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;baidu&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# you need to disable other search engines to use Baidu search&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;即可使用站内搜索功能&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. 支持 rss 订阅&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主题中已经内置好了，只需要安装插件即可。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-generator-feed --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;5. 生成站点地图&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;站点地图描述了网页的架构，生成站点地图可以方便搜索引擎收录你的博客。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-generator-sitemap --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-generator-baidu-sitemap --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;更改完成后，每次进行打包的时候，会自动在 &lt;code&gt;public&lt;/code&gt;  文件夹下生成 &lt;code&gt;sitemap.xml&lt;/code&gt;  和 &lt;code&gt;baidusitemap.xml&lt;/code&gt;  分别用于 Google 和百度。&lt;/p&gt;
+&lt;p&gt;将页面提交到服务器后，通过 &lt;code&gt;域名/sitemap.xml&lt;/code&gt;  或者 &lt;code&gt;域名/baidusitemap.xml&lt;/code&gt;  可以进行访问 &lt;code&gt;sitemap&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;最后到 Google 或百度站长工具进行提交 &lt;code&gt;sitemap&lt;/code&gt;  就可以主动使搜索引擎收录页面。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6. 配置主题颜色&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主题定制了五套颜色，可以在主题配置文件 &lt;code&gt;_config.pure.yml&lt;/code&gt;  中更改。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;默认白，黑:theme-black，蓝:theme-blue，绿:theme-green，紫:theme-purple&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# config&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;config&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;skin&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 主题颜色 theme-black theme-blue theme-green theme-purple&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;7. 配置导航菜单&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 导航菜单&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;menu&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;Home&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; . &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;Archives&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; archives &lt;span class=&#34;token comment&#34;&gt;# 归档&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;Categories&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; categories &lt;span class=&#34;token comment&#34;&gt;# 分类&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;Tags&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; tags &lt;span class=&#34;token comment&#34;&gt;# 标签&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# Repository: repository # github repositories&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# Books: books     # 书单 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;Links&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; links &lt;span class=&#34;token comment&#34;&gt;# 友链&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;About&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; about &lt;span class=&#34;token comment&#34;&gt;# 关于&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 导航菜单图标（font awesome）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;menu_icons&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 是否启用菜单图标&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;home&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; icon&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;home&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;fill&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;archives&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; icon&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;archives&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;fill&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;categories&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; icon&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;folder&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;tags&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; icon&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;tags&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# repository: icon-project&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# books: icon-book-fill&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; icon&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;friendship&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;about&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; icon&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;cup&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;fill&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;我将书单和 github 仓库关闭了，所以不配置相关内容。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;8. 设置个人信息&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;头像在  &lt;code&gt;themes\pure\source\images&lt;/code&gt;  目录下替换图片即可，捐献的二维码同理。个人信息大部分都在 主题配置文件 中设置&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9. 设置分享&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;支持 &lt;code&gt;weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Share&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;share&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 是否启用分享&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;sites&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; weibo&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;qq&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;wechat&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;facebook&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;twitter  &lt;span class=&#34;token comment&#34;&gt;# PC 端显示的分享图标&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;mobile_sites&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; weibo&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;qq&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;qzone  &lt;span class=&#34;token comment&#34;&gt;# 移动端显示的分享图标&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;10. 侧边栏设置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在文章头部自动生成的配置栏中，添加字段如下&lt;/p&gt;
+&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: testblog&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mathjax: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;translate_title: testblog&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: 2022-06-26 13:39:42&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;toc: true   ### toc: table of content 目录&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;categories:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tags:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;此时，文章右侧显示出目录。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220627110121911.png&#34; alt=&#34;image-20220627110121911&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果在增加配置 &lt;code&gt;sidebar: none&lt;/code&gt; ，则右侧目录组件（或原组件）就不会显示。&lt;/p&gt;
+&lt;p&gt;但这个目录功能有一个 bug，如果是手机访问的话，这个目录会浮动在内容上面，遮挡内容。&lt;/p&gt;
+&lt;p&gt;改天有时间了尝试着修复下。&lt;/p&gt;
+&lt;h2 id=&#34;pure主题博客优化非必须&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pure主题博客优化非必须&#34;&gt;#&lt;/a&gt; Pure 主题博客优化（非必须）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;博客如果只作笔记，以记录作用为主，那么可以不配置下面的内容。&lt;/p&gt;
+&lt;p&gt;如果要作为个人主页来展示，那么，建议继续配置以下内容。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1. 文章阅读量统计&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主题内置了 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2J1c3VhbnppLmlicnVjZS5pbmZvLw==&#34;&gt;不蒜子&lt;/span&gt; 统计和 基于 leancloud 的统计&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;开启不蒜子统计：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在主题配置文件中（根目录下的主题配置文件 &lt;code&gt;_config.pure.yml&lt;/code&gt; ）, 开启设置即可：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# PV&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;pv&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 浏览量统计&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;busuanzi&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 不蒜子统计，一般使用不蒜子统计，使用 true 开启&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;经过验证，发现基于 leancloud 的统计不生效，不知原因，实现等效的方法就是:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;评论框使用 &lt;code&gt;valine&lt;/code&gt;  评论框 (主题已经内置), 同时开启  &lt;code&gt;visitor: true&lt;/code&gt;  配置项即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2. 配置评论功能&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92YWxpbmUuanMub3JnL3F1aWNrc3RhcnQuaHRtbA==&#34;&gt;快速开始 | Valine 一款快速、简洁且高效的无后端评论系统。&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Valine 是一个无后端的评论框工具，其依赖于 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWFuY2xvdWQuY24v&#34;&gt;Leancloud&lt;/span&gt; 开发，所以使用前需要先注册 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWFuY2xvdWQuY24v&#34;&gt;Leancloud&lt;/span&gt; 账号&lt;/p&gt;
+&lt;p&gt;首先，在控制台界面，创建应用。成功创建后，效果如图。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220625191135981.png&#34; alt=&#34;image-20220625191135981&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;点击进入应用内，查看自己的 &lt;code&gt;appid&lt;/code&gt;  和 &lt;code&gt;appkey&lt;/code&gt; ，并复制。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220625191410985.png&#34; alt=&#34;image-20220625191410985&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在主题配置文件中（根目录下的主题配置文件 &lt;code&gt;_config.pure.yml&lt;/code&gt; ）修改字段并添加内容：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;comment&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; valine  &lt;span class=&#34;token comment&#34;&gt;# 启用哪种评论系统&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;valine&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# Valine 官方地址: https://valine.js.org&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;appid&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 你的 leancloud 应用 appid&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;appkey&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 你的 leancloud 应用 appkey&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;notify&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 是否开始评论邮件提醒，教程: https://github.com/xCss/Valine/wiki&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;verify&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 是否开始验证码功能，开始邮件提醒会自动开启验证码功能&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;placeholder&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 说点什么&lt;span class=&#34;token punctuation&#34;&gt;...&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 输入框默认内容&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;avatar&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; mp &lt;span class=&#34;token comment&#34;&gt;# 头像展示方式，具体设置项教程: https://valine.js.org/configuration.html#avatar&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;meta&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nick&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;mail&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;link &lt;span class=&#34;token comment&#34;&gt;# 自定义评论信息&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;pageSize&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 评论列表分页&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; zh&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;cn&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 多语言支持 zh-cn | en&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;visitor&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 文章阅读量统计:  https://valine.js.org/visitor.html &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;highlight&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 代码高亮&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;recordIP&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 记录评论者的 IP&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;如果设置了不蒜子统计，那么 &lt;code&gt;visitor&lt;/code&gt;  字段就填 &lt;code&gt;false&lt;/code&gt; ，否则会重复统计浏览量。&lt;/p&gt;
+&lt;p&gt;如果没有设置不蒜子统计，那么 &lt;code&gt;visitor&lt;/code&gt;  可以设置 &lt;code&gt;true&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;评论的管理：在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWFuY2xvdWQuY24v&#34;&gt;Leancloud&lt;/span&gt; 中创建一个 &lt;code&gt;Comment Class&lt;/code&gt; ，其余配置不变。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220625191922253.png&#34; alt=&#34;image-20220625191922253&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;使用博客系统发表评论时，即会同步显示在 &lt;code&gt;Comment&lt;/code&gt;  对象中。如果开启了 &lt;code&gt;visitor: true&lt;/code&gt;  功能，那么还会自动创建 &lt;code&gt;Counter Class&lt;/code&gt; ，用以记录访问人数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 评论头像的修改：&lt;/strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92YWxpbmUuanMub3JnL2F2YXRhci5odG1s&#34;&gt;头像配置 | Valine 一款快速、简洁且高效的无后端评论系统。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Valine 目前使用的是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NuLmdyYXZhdGFyLmNvbS8=&#34;&gt; Gravatar&lt;/span&gt; 作为评论列表头像。需要自行登录或注册&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NuLmdyYXZhdGFyLmNvbS8=&#34;&gt; Gravatar&lt;/span&gt;，然后修改自己的头像。评论的时候，留下在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2NuLmdyYXZhdGFyLmNvbS8=&#34;&gt; Gravatar&lt;/span&gt; 注册时所使用的邮箱即可。&lt;/p&gt;
+&lt;p&gt;非自定义头像有 7 中默认值可以选择。（上述配置中使用的 mp，因此，如果不添加邮箱，则会展示灰白头像）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20220626105532431.png&#34; alt=&#34;image-20220626105532431&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. 向百度爬虫提交链接&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考文档&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWktd2FuZy5pbmZvLzIwMTYvMTAvMjMvSGV4byVFNiU4RiU5MiVFNCVCQiVCNiVFNCVCOSU4QiVFNyU5OSVCRSVFNSVCQSVBNiVFNCVCOCVCQiVFNSU4QSVBOCVFNiU4RiU5MCVFNCVCQSVBNCVFOSU5MyVCRSVFNiU4RSVBNS8=&#34;&gt;Hexo 插件之百度主动提交链接 | 王辉的博客 (hui-wang.info)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请注意， 本插件的配置文件中包含秘钥， 请妥善管理好博客源码&lt;/strong&gt;【源码&lt;strong&gt;可以保存在本地&lt;/strong&gt;，如要推上 Github，一定要推到&lt;strong&gt;私有仓库&lt;/strong&gt;】&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先，注册百度站长工具，然后在&lt;strong&gt;工具 -&amp;gt; 网页抓取 -&amp;gt; 链接提交&lt;/strong&gt;里找到你的密匙。&lt;/p&gt;
+&lt;p&gt;随后，安装 &lt;code&gt;hexo-baidu-url-submit&lt;/code&gt;  插件&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-baidu-url-submit --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;其次，在根目录下，把以下内容配置到 &lt;code&gt;_config.yml&lt;/code&gt;  文件中:&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;baidu_url_submit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;count&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;## 提交最新的 5 个链接 (一次最多新增 5 篇文章，否则向百度提交链接就会漏掉一些)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; blog.sunforge.cn &lt;span class=&#34;token comment&#34;&gt;## 在百度站长平台中注册的域名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;token&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; your_token &lt;span class=&#34;token comment&#34;&gt;## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里！&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; baidu_urls.txt &lt;span class=&#34;token comment&#34;&gt;## 文本文档的地址， 新链接会保存在此文本文档里&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;再次，记得查看博客根目录下 &lt;code&gt;_config.yml&lt;/code&gt;  文件中 url 的值， 必须包含是百度站长平台注册的域名， 比如:&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# URL&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; http&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;//blog.sunforge.cn&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; /&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;permalink&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;year/&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;month/&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;day/&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;title/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;最后，加入新的 deployer:&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 原来的内容&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; baidu_url_submitter &lt;span class=&#34;token comment&#34;&gt;## 这是新加的&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;执行 &lt;code&gt;hexo deploy&lt;/code&gt;  的时候，新的链接就会被推送了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. 引入 fancybox 图床实现图片点击放大&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;主题已经内置 FancyBox 功能。只需在主题配置文件 &lt;code&gt;_config.pure.yml&lt;/code&gt;  中开启即可。&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Fancybox&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;fancybox&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;至此，hexo 博客的配置教程告一段落。祝顺利。&lt;/strong&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://blog.sunforge.cn/computer-science/git/%E9%85%8D%E7%BD%AEgithub%E7%9A%84ssh-key/</guid>
+            <title>配置github的ssh key (Windows)</title>
+            <link>http://blog.sunforge.cn/computer-science/git/%E9%85%8D%E7%BD%AEgithub%E7%9A%84ssh-key/</link>
+            <category term="计算机科学" scheme="http://blog.sunforge.cn/categories/computer-science/" />
+            <category term="git" scheme="http://blog.sunforge.cn/categories/computer-science/git/" />
+            <category term="教程" scheme="http://blog.sunforge.cn/tags/%E6%95%99%E7%A8%8B/" />
+            <category term="git" scheme="http://blog.sunforge.cn/tags/git/" />
+            <pubDate>Wed, 22 Jun 2022 06:20:10 +0000</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;github-添加-ssh-key&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#github-添加-ssh-key&#34;&gt;#&lt;/a&gt; github 添加 ssh key&lt;/h2&gt;
+&lt;p&gt;通过 ssh key，可以配置 git 的多平台操作。实际上，通过 ssh 协议连接 github，gitee 等平台，相比 https 协议，速度更快，也更稳定。不会受到网络影响。&lt;/p&gt;
+&lt;h4 id=&#34;1-找到ssh文件夹&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-找到ssh文件夹&#34;&gt;#&lt;/a&gt; 1. 找到 &lt;code&gt;.ssh&lt;/code&gt;  文件夹&lt;/h4&gt;
+&lt;p&gt;在当前用户目录 &lt;code&gt;C:\User\yourname&lt;/code&gt;  下，找 &lt;code&gt;.ssh&lt;/code&gt;  文件夹，如果没有这个文件夹，那么自己新建一个。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415102617575.png&#34; alt=&#34;image-20210415102617575&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-在git-bash或windows-powershell中打开ssh目录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-在git-bash或windows-powershell中打开ssh目录&#34;&gt;#&lt;/a&gt; 2. 在 git bash（或 Windows Powershell）中，打开 &lt;code&gt;.ssh&lt;/code&gt;  目录&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415103025730.png&#34; alt=&#34;image-20210415103025730&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-生成ssh密匙对&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-生成ssh密匙对&#34;&gt;#&lt;/a&gt; 3. 生成 SSH 密匙对&lt;/h3&gt;
+&lt;p&gt;在目录中，输入以下命令 &lt;code&gt;ssh-keygen -t rsa -C &#39;youremail@test.com&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415105207558.png&#34; alt=&#34;image-20210415105207558&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一步中的更名，是自定义的。推荐改名，默认名字会产生覆盖，并且无法区分用途。&lt;/p&gt;
+&lt;p&gt;口令可以不设置。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如下，已经生成了测试的 SSH 密钥对（&lt;strong&gt;SSH 协议底层使用 RSA 密码算法进行数据加密&lt;/strong&gt;）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415105526680.png&#34; alt=&#34;image-20210415105526680&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4-将ssh公钥上传到githubgitee等代码托管平台&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-将ssh公钥上传到githubgitee等代码托管平台&#34;&gt;#&lt;/a&gt; 4. 将 SSH 公钥上传到 github（gitee 等）代码托管平台&lt;/h3&gt;
+&lt;p&gt;将 &lt;code&gt;.pub&lt;/code&gt;  文件（公钥文件）在记事本（或 vscode 等）中打开，将公钥复制。并粘贴到 github 上&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415111040971.png&#34; alt=&#34;image-20210415111040971&#34; /&gt;&lt;img data-src=&#34;%E9%85%8D%E7%BD%AEgithub%E7%9A%84ssh-key/image-20210417092209903.png&#34; alt=&#34;image-20210417092209903&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415111116113.png&#34; alt=&#34;image-20210415111116113&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-在ssh文件夹中配置config文件如果没有config文件就自己新建一个&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5-在ssh文件夹中配置config文件如果没有config文件就自己新建一个&#34;&gt;#&lt;/a&gt; 5. 在 &lt;code&gt;.ssh&lt;/code&gt;  文件夹中，配置 &lt;code&gt;config&lt;/code&gt;  文件（如果没有 config 文件，就自己新建一个）&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实际上，如果有多平台使用需求（比如我有一个 github 仓库，一个 gitee 仓库，公司使用 gitlab 仓库）那么才需要配置 config 文件。否则可以跳过。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210417122803584.png&#34; alt=&#34;image-20210417122803584&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意，需要设置显示文件后缀名，然后连着扩展名一起改掉。可以&lt;strong&gt;参考这里&lt;/strong&gt;：[windows11 显示文件后缀名_vbind 的博客 - CSDN 博客](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3ZiaW5kL2FydGljbGUvZGV0YWlscy8xMjQzNjk0ODQjOn46dGV4dD0lRTYlOUYlQTUlRTclOUMlOEIlRTYlOTYlODclRTQlQkIlQjY=&#34;&gt;https://blog.csdn.net/vbind/article/details/124369484#:~:text = 查看文件&lt;/span&gt;   查看文件是否有扩展名，没有，后缀名 通过 ctrl%2BE 打开计算机，找到 “工具”—%26gt%3B “文件夹选项”—%26gt%3B “查看”，取消勾选 “隐藏已知文件类型的扩展名”，然后就可以看到文件的扩展名。)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;输入下述内容&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# github
+Host github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_testgithub
+User git
+
+# gitee
+Host gitee.com
+HostName gitee.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/gitee_id_rsa
+User git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;配置文件中的 HostName 是远程仓库的访问地址，这里可以是 IP，也可以是域名。Host 是用来拉取的仓库的别名，配不配置都行。如果 HostName 没配置的话，那就必须把 Host 配置为仓库 IP 地址或者域名，而非别名。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;IdentityFile&lt;/code&gt;  必须要是 &lt;code&gt;.ssh&lt;/code&gt;  文件夹中真实存在的私钥文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;6-测试ssh连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6-测试ssh连接&#34;&gt;#&lt;/a&gt; 6. 测试 ssh 连接&lt;/h3&gt;
+&lt;p&gt;在 git bash 或 powershell 中 输入 &lt;code&gt;ssh -T git@github.com&lt;/code&gt; ，若返回结果如图所示，则连接成功。&lt;/p&gt;
+&lt;p&gt;首次操作连接会询问 &lt;code&gt;Are you sure you want to continue connecting (yes/no)?&lt;/code&gt;  填写 yes 即可。&lt;/p&gt;
+&lt;p&gt;如果没有配好上一步的 config 文件，就会出现 &lt;code&gt;Permission denied (public key)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415111833877.png&#34; alt=&#34;image-20210415111833877&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此处，SSH key 已经配好。以下部分是 SSH key 的使用&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;7-用ssh连接代替https连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7-用ssh连接代替https连接&#34;&gt;#&lt;/a&gt; 7. 用 ssh 连接代替 https 连接&lt;/h3&gt;
+&lt;p&gt;将此处的地址复制，打开 github desktop（或 source tree 等）git 图形界面软件，粘贴到仓库地址中。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415112943107.png&#34; alt=&#34;image-20210415112943107&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210415113145586.png&#34; alt=&#34;image-20210415113145586&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20210416230756320.png&#34; alt=&#34;image-20210416230756320&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;或者直接使用 git 命令行界面，修改仓库地址&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;可以打开 &lt;code&gt;git bash&lt;/code&gt;  界面，修改仓库的地址&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config --global url.&lt;span class=&#34;token string&#34;&gt;&#34;git://&#34;&lt;/span&gt;.insteadOf https://&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这样可以使得，你的 &lt;code&gt;.gitconfig&lt;/code&gt;  中会多出一行参数设置。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[url &amp;quot;git://&amp;quot;]   
+    insteadOf = https://
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样一来，不管你在终端进行 clone，使用 &lt;code&gt;git://&lt;/code&gt; ，或者 &lt;code&gt;http://&lt;/code&gt;  去访问别人的 repository，两种方式都会默认变成 &lt;code&gt;git://&lt;/code&gt;  的形式进行连接并正常的工作了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有时候系统可能会提示你防火墙禁止对 git:// 的访问，这时候就只能用 https:// 来访问 repository，这时候可以采用类似地方式，设置到 &lt;code&gt;https://&lt;/code&gt;  的模式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;8-配置仓库的用户名和邮箱可选&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8-配置仓库的用户名和邮箱可选&#34;&gt;#&lt;/a&gt; 8. 配置仓库的用户名和邮箱（可选）&lt;/h3&gt;
+&lt;p&gt;在本地的仓库目录下，配置该仓库使用的用户名和邮箱。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config --local user.name 张三&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config --local user.email zhangsan@test.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这里的账户可以和我们开始时生成密钥时（ &lt;code&gt;ssh-keygen -t rsa -C &#39;youremail@test.com&#39;&lt;/code&gt; ）的邮箱可以不同，与 git 的 global 邮箱可以不同。（当然也可以相同...... 相同就不用配）&lt;/p&gt;
+&lt;p&gt;生成密钥的邮箱是使用那个密钥的全局用户（所以一定要设置自己正确的邮箱）。&lt;/p&gt;
+&lt;p&gt;这里配置的是密钥在某个仓库下的 “局部” 用户。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
